@@ -93,6 +93,10 @@ a :hover, a :focus{
     cursor: pointer;
     opacity: 0.8;
  }
+
+ button{
+    cursor: pointer;
+ }
  .navigation-list_item--active{
     text-decoration: none;
  }
@@ -117,14 +121,23 @@ a :hover, a :focus{
     margin: 0 auto;
     text-align: center;
  }
- .profile-portrait{
+ .profile_portrait{
     float:left;
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
  }
 
- 
+ .profile_portrait{
+    margin-top: 20px;
+ }
+
+ section{
+    margin-right: auto;
+ }
+ .skills{
+    margin-right: 40px;
+ }
  
 
  .page-footer{
@@ -166,8 +179,9 @@ a :hover, a :focus{
     list-style-type: none;
  }
  .skills{
-    text-align: center;
+    margin: 0 auto;
  }
+
 
  .grid{
     display: grid;
@@ -185,6 +199,9 @@ a :hover, a :focus{
     color: var(--button-color);
  }
 
+ .table{
+    text-align: center;
+ }
  @keyframes color-change {
   0% { fill: #0b131d;}
   50%{ fill: #1b559e;}
