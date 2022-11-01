@@ -202,11 +202,29 @@ a :hover, a :focus{
  .table{
     text-align: center;
  }
+
+ .skills{
+   text-align: center;
+   margin: 0 auto;
+ }
+
+ .button{
+   margin: 20px;
+ }
  @keyframes color-change {
   0% { fill: #0b131d;}
   50%{ fill: #1b559e;}
   100%{ fill: #0573fc;}
  }
+
+img, svg{
+   max-width: 100%;
+}
+
+.credit{
+   text-align: center;
+   font-weight:100;
+}
 /* .tree{
 animation-duration: 5s;
 animation-name: color-change;
