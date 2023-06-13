@@ -21,6 +21,7 @@ visited link: aliceblue
 
 html{
     background-color: var(--background-color);
+    background-color: #101820FF;
 }
 body{
     font-family: 'Barlow', sans-serif;
@@ -29,6 +30,7 @@ body{
     line-height: 1.6;
     text-align: center;
     color: var(--primary-color);
+    color:#FEE715FF;
     
 }
 footer,header{
@@ -101,9 +103,13 @@ a :hover, a :focus{
     text-decoration: none;
  }
 
+ .navigation-list {
+
+ }
+
  .profile-portrait{
     float:left;
-    width: 20px;
+    width: 250px;
     margin-left: 40px;
     margin-right: 40px;
  }
@@ -122,9 +128,7 @@ a :hover, a :focus{
     text-align: center;
  }
  .profile_portrait{
-    float:left;
     width: 250px;
-    margin-right: 40px;
     border-radius: 50%;
  }
 
@@ -152,6 +156,10 @@ a :hover, a :focus{
     padding: 20px;
     display: inline-block;
  }
+
+ .page-header img {
+   float:left;
+   }
 
  .page-header_item{
     flex: 0 1 200px;
@@ -183,6 +191,7 @@ a :hover, a :focus{
  }
 
 
+
  .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -211,6 +220,20 @@ a :hover, a :focus{
  .button{
    margin: 20px;
  }
+
+ #contact-form {
+   display:inline-grid;
+}
+ #contact-form label {
+   padding-top:5px;
+ }
+
+ [type=button], [type=reset], [type=submit], button {
+   padding: 15px 0px;
+   margin-top: 15px;
+}
+ 
+
  @keyframes color-change {
   0% { fill: #0b131d;}
   50%{ fill: #1b559e;}
@@ -265,15 +288,27 @@ animation-timing-function: linear;
         font-size: 22px;
     }
 
+    .page-header_item {
+      margin-right:unset;
+    }
+
  }
 
  @media all and (max-width: 500px){
     .grid{
         grid-template-columns: 1fr;
     }
+
+    .page-header_item {
+      margin-right:unset;
+    }
  }
  @media all and (min-width: 500px) and (max-width: 750px){
     .grid{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .page-header_item {
+      margin-right:unset;
     }
  }
