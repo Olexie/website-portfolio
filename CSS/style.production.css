@@ -129,6 +129,14 @@ button {
 
 .page-footer {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
 }
 
 .about-profile {
@@ -152,13 +160,6 @@ section {
 
 .skills {
   margin-right: 40px;
-}
-
-.page-footer {
-  clear: both;
-  /* display: flex;*/
-  flex-direction: row;
-  text-align: center;
 }
 
 .page-header {
@@ -186,12 +187,6 @@ section {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
 }
 
 .list {
